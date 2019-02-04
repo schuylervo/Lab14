@@ -16,9 +16,10 @@ public class RandomPlayer extends Player {
 		if (n == 2) {
 		return Roshambo.PAPER;	
 		}
-		else {
+		if (n ==3) {
 		return Roshambo.SCISSORS;	
 		}
+		return generateRoshambo();
 	}
 	
 	public RandomPlayer () {
